@@ -1,0 +1,27 @@
+#window{
+    background-color: black;
+    margin-top: 50px;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0px black;
+}
+.swapbox
+{
+    overflow: auto;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #3a3a3a;
+    border-radius: 20px;
+    border: 1px solid #5c5a5a;
+}
+.swapbox_select
+{
+    width: 50%;
+    float: left;
+}
+.token_select
+{
+    width: 50%;
+    float: left;
+}

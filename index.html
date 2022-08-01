@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>My DEX</title>
+    <title>FlexChange</title>
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
@@ -14,7 +14,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">My DEX</a>
+        <a class="navbar-brand" href="#">Trade Crypto on FlexChange</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,7 +34,8 @@
                 <h4>Swap</h4>
                 <div id="form">
                     <div class="swapbox">
-                        <div class="swapbox_select token_select" id="from_token_select">
+                        <div class="token_select" id="from_token_select">
+                            Token to sell
                             <img class="token_image" id="from_token_img">
                             <span id="from_token_text"></span>
                         </div>
@@ -44,6 +45,7 @@
                     </div>
                     <div class="swapbox">
                         <div class="swapbox_select token_select"  id="to_token_select">
+                          Token to buy
                             <img class="token_image" id="to_token_img">
                             <span id="to_token_text"></span>
                         </div>
