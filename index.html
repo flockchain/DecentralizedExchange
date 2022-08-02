@@ -34,8 +34,7 @@
                 <h4>Swap</h4>
                 <div id="form">
                     <div class="swapbox">
-                        <div class="token_select" id="from_token_select">
-                            Token to sell
+                        <div class="swapbox_select token_select" id="from_token_select">
                             <img class="token_image" id="from_token_img">
                             <span id="from_token_text"></span>
                         </div>
@@ -45,7 +44,6 @@
                     </div>
                     <div class="swapbox">
                         <div class="swapbox_select token_select"  id="to_token_select">
-                          Token to buy
                             <img class="token_image" id="to_token_img">
                             <span id="to_token_text"></span>
                         </div>
@@ -53,7 +51,7 @@
                             <input class="number form-control" placeholder="amount" id="to_amount">
                         </div>
                     </div>
-                    <div>Estimated Gas: <span id="gas_estimate"></span></div>
+                    <div>Estimated Gas in Wei: <span id="gas_estimate"></span></div>
                     <button disabled class="btn btn-large btn-primary btn-block" id="swap_button">
                         Swap
                     </button>
@@ -61,12 +59,12 @@
             </div>
         </div>
     </div>
-    <div class="modal" id="token_modal" tabindex="-1" role="dialog">
+    <div class="modal" id="token_modal" tabindex="-1" role="dialog" style="display: none">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title">Select token</h5>
-              <button id="modal_close" type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <button type="button" id="modal_close" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
@@ -76,7 +74,7 @@
           </div>
         </div>
       </div>
-
+ 
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
